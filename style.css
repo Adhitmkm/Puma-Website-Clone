@@ -67,6 +67,7 @@
     height: 22px;
     width: 22px;
     color: white;
+    cursor: pointer;
 }
 .items-icon .search {
     font-size: 16px;
@@ -198,6 +199,7 @@
     height: 100px;
     padding: 3px;
     border-radius: 50%;
+    cursor: pointer;
     /* border: 2px solid #cf3131; */
   } 
 
@@ -273,6 +275,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
     
   }
 
@@ -290,12 +293,10 @@
     margin-bottom: 40px;
     /* background-color: rgb(241, 9, 9); */
     position: relative;
-    cursor: pointer;
   }
   .pumax img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   .pumax .pumaxbox {
     /* background-color: aqua; */
@@ -321,9 +322,16 @@
     font-size: 20px;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    padding: 5px;
+    padding: 10px 25px;
 
   }
+
+  .pumaxbox a:hover {
+    background-color: rgb(199, 193, 193);
+
+  }
+
+
 
   .pumax .pumaxbox-shop {
     /* background-color: aqua; */
@@ -356,6 +364,10 @@
     padding: 5px;
 
   }
+  .pumax .pumaxbox-shop a:hover {
+    background-color: rgb(199, 193, 193);
+  }
+  
 
   /* section -------------------------------------->>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -409,6 +421,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
     
   }
   .gear-imgage-box span{
@@ -474,6 +487,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
     
   }
   .discover-imgage-box span{
@@ -532,8 +546,8 @@
 }
 
 /* Trending Image Box */
-.trending-imgage-box {
-  flex: 0 0 300px;
+.trending-imgage-box {    
+  flex: 0 0 400px;
   height: 400px;
   background-color: #fff;
   display: flex;
@@ -546,8 +560,9 @@
 
 .trending-imgage-box img {
   width: 100%;
-  height: 75%; 
+  height: 95%; 
   object-fit: cover;
+  cursor: pointer;
 }
 
 .trending-imgage-box span {
@@ -764,6 +779,7 @@
   color: #fff;
   padding: 20px 10px;
   border-top: 2px solid white;
+  padding: 0px 200px 30px 200px;
 }
 
 /* Footer Content */
@@ -791,6 +807,7 @@
   margin-bottom: 5px;
   font-size: 16px;
   line-height: 1.6;
+  cursor: pointer;
 }
 
 .footer .head {
@@ -799,6 +816,7 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   color: #f0f0f0;
+  cursor:default;
 }
 /* India Section */
 .india {
@@ -811,11 +829,13 @@
 .india h5 {
   font-size: 18px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .india h6 {
   font-size: 14px;
   color: #ccc;
+  cursor: pointer;
 }
 
 
@@ -1000,6 +1020,10 @@ display: none;
     .trending h3 {
         font-size: 22px;
     }
+    .footer-main {
+      padding: 0px 60px 30px 60px;
+
+    }
     
     .footer div {
       flex: 1 1 180px;
@@ -1100,6 +1124,11 @@ display: none;
         font-size: 22px;
     }
 
+    .footer-main {
+      padding: 0px 40px 00px 40px;
+
+    }
+
 
   .footer {
     flex-direction: column;
@@ -1195,15 +1224,32 @@ display: none;
 
 .elavate-images {
   display: flex;
-  gap: 5px;
+  gap: 7px;
   padding: 1px;
   overflow-x: auto;
   scroll-behavior: smooth;
   background-color: #eaf7f7;
+  scroll-behavior: smooth;
+}
+.elavate-images::-webkit-scrollbar {
+  height: 2px;
+  background: #e0e0e0;
+}
+
+.elavate-images::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 1px;
+}
+
+.elavate-images::-webkit-scrollbar-thumb:hover {
+  background-color: #0e0d0d;
 }
 .elavate-images .imgage-box {
-  height: 200px;
-  width: 500px;
+
+  flex: 0 0 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 .imgage-box span{
   bottom: 4px;
@@ -1269,40 +1315,83 @@ display: none;
 }
 /* section -------------------------------------->>>>>>>>>>>>>>>>>>>>>>>> */
 
+.gear-images {
+  display: flex;
+  gap: 7px;
+  padding: 1px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  background-color: #eaf7f7;
+  scroll-behavior: smooth;
+}
+.gear-images::-webkit-scrollbar {
+  height: 2px;
+  background: #000000;
+}
+
+.gear-images::-webkit-scrollbar-thumb {
+  background-color: #2b2626;
+  border-radius: 1px;
+}
+
+.gear-images::-webkit-scrollbar-thumb:hover {
+  background-color: #0e0d0d;
+}
 .gear-images .gear-imgage-box {
-  height: 120px;
-  width: 240px;
+  flex: 0 0 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
  
 }
-.gear-images {
-  scroll-behavior: smooth;
-  gap: 2px;
-}
-.gear-images .gear-imgage-box  img {
+/* .gear-images .gear-imgage-box  img {
   width: 100px;
   height: 100px;
   padding: 2px;
-}
+} */
 .gear-imgage-box span{
-  bottom: 1px;
-  margin-left: 1px;
-  font-size: 10px;
-  font-weight: 350;
+  bottom: 4px;
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 300;
 }
 
-      /* section -------------------------------------->>>>>>>>>>>>>>>>>>>>>>>> */
+  /* section -------------------------------------->>>>>>>>>>>>>>>>>>>>>>>> */
+  .discover-images {
+  display: flex;
+  gap: 7px;
+  padding: 1px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  background-color: #eaf7f7;
+  scroll-behavior: smooth;
+  }
+
+  .discover-images::-webkit-scrollbar {
+    height: 2px;
+    background: #000000;
+  }
+  
+  .discover-images::-webkit-scrollbar-thumb {
+    background-color: #2b2626;
+    border-radius: 1px;
+  }
+  
+  .discover-images::-webkit-scrollbar-thumb:hover {
+    background-color: #0e0d0d;
+  }
 .discover-images .discover-imgage-box {
-  height: 180px;
-  width: 240px;
+  flex: 0 0 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
  
 }
-.discover-images {
-  gap: 4px;
-}
 .discover-imgage-box span{
-  bottom: 1px;
-  margin-left: 1px;
-  font-size: 10px;
+  bottom: 4px;
+  z-index: 1000;
+  margin-left: 4px;
+  font-size: 14px;
   font-weight: 300;
 }
 
